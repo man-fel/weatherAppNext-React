@@ -7,7 +7,6 @@ import CloudIcon from '@mui/icons-material/Cloud';
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import VapingRoomsIcon from '@mui/icons-material/VapingRooms';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 let WEATHER_API_KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY
@@ -71,9 +70,6 @@ export default function Home() {
               }
               {placeData.weather[0].main === "Clear" &&
               <WbSunnyIcon className={styles.weathericon}/>
-              }
-              {placeData.weather[0].main === "Rain" &&
-              <FontAwesomeIcon icon={faCloudShowers} className={styles.weathericon}/>
               }
               {placeData.weather[0].main === "Clear" &&
               <WbSunnyIcon className={styles.weathericon}/>
